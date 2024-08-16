@@ -1,0 +1,218 @@
+.par1 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  color: #ffffff;
+  padding-top: 200px;
+}
+
+.hero {
+  background-image: url("../../../public/images/Rectangle 167.png");
+  background-size: cover;
+  background-position: center;
+  height: 629px;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 117px;
+  margin: 0 auto;
+}
+
+.par2 {
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 57.5px;
+  text-align: left;
+  color: #ffffff;
+  padding-top: 32px;
+}
+
+.par3 {
+  background-color: #d5f8cf;
+  margin-top: 39px;
+  padding: 28px 73px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #0ba42d;
+  }
+
+  select {
+    background-color: #0ba42d;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 8px;
+  }
+}
+
+.product {
+  max-height: 10000px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  justify-content: center;
+}
+
+.brands {
+  text-align-last: left;
+}
+
+.brandw {
+  padding-top: 20px;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+.colorsw {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  li {
+    padding-top: 12px;
+  }
+}
+
+.inputs {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  justify-content: center;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    label {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 22.5px;
+      text-align: left;
+      max-width: 238px;
+    }
+    input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-color: #ffffff;
+      border: 2px solid #0ba42d;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+
+      &:checked {
+        background-color: #0ba42d;
+        border-color: #0ba42d;
+
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 2px;
+          left: 4px;
+          width: 4px;
+          height: 8px;
+          border: solid #ffffff;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}
+.products {
+  padding-top: 67px;
+  display: flex;
+  gap: 40px;
+  align-items: start;
+  .all {
+    width: 1000px;
+    .products_wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 2fr));
+      li {
+        max-width: 300px;
+        height: 600px;
+        margin: 10px;
+        .ab {
+          background-color: #f4f4f4;
+          padding: 58px 50px 58px 50px;
+          img {
+            width: 168px;
+          }
+        }
+        h2 {
+          padding-top: 22px;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 25px;
+          text-align: left;
+          cursor: pointer;
+        }
+        p {
+          max-width: 280px;
+          font-family: Readex Pro;
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 22.5px;
+          text-align: left;
+          padding-top: 12px;
+        }
+        div {
+          font-family: Readex Pro;
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 27.5px;
+          text-align: left;
+        }
+        button {
+          max-width: 225px;
+          width: 100%;
+          padding: 8px 34px 16px 34px;
+          background-color: #0ba42d;
+          color: white;
+          border: none;
+          cursor: pointer;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          justify-content: center;
+          margin: 20px auto;
+          transition: 0.4s;
+          &:hover {
+            background-color: #09992868;
+          }
+          p {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 26.63px;
+            text-align: center;
+          }
+          svg {
+            margin-top: 9px;
+            width: 24px;
+            height: 24px;
+            fill: white;
+          }
+        }
+      }
+    }
+  }
+}

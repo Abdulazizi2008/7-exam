@@ -1,0 +1,88 @@
+.before {
+  background-color: #0d2613;
+}
+.container {
+  max-width: 1440px;
+  padding: 0 117px;
+  margin: 0 auto;
+}
+.all {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 107px;
+  padding-right: 107px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.par1 {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.par2 {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  color: white;
+}
+.par3 {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+}
+.par3 span {
+  color: #14ff00;
+}
+.par {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+.par4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  z-index: 100;
+}
+.navItems {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+nav {
+  padding-top: 39px;
+  padding-bottom: 39px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.svgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 42px;
+}
+.items {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: #0d2612;
+  transition: 0.4s;
+}
+.items:hover {
+  color: #14ff00;
+}

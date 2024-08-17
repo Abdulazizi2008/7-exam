@@ -148,6 +148,7 @@
   .all {
     width: 1000px;
     .products_wrapper {
+      margin-top: -150px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(290px, 2fr));
       li {

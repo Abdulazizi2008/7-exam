@@ -9,3 +9,7 @@
   list-style: none;
   scroll-behavior: smooth;
 }
+button:disabled {
+  background-color: #cccccc !important;
+  cursor: not-allowed;
+}

@@ -4,6 +4,7 @@ import Aside from "./Aside";
 import { FaCartShopping } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import { addItem } from "../../store/cartSlice";
 
 import { setLoading, saveProducts } from "../../store/productsSlice";
 
@@ -15,6 +16,8 @@ function Main({
   sort,
   setSort,
 }) {
+  const { items } = useSelector((store) => store.cart);
+  const dispatcn = useDispatch();
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { products, loading } = useSelector((store) => store.products);
@@ -63,8 +66,13 @@ function Main({
     navigate(`/product/${productId}`);
   };
 
+  const handleAddToCart = (product) => {
+    dispatch(addItem(product));
+    console.log("hello!");
+  };
+
   return (
-    <div>
+    <div className={style.all}>
       <section className={style.hero}>
         <div className={style.container}>
           <div className={style.par1}>
@@ -126,7 +134,10 @@ function Main({
                     ))}
                   </ul>
                   <div>${product.price}</div>
-                  <button>
+                  <button
+                    onClick={() => handleAddToCart(product)}
+                    disabled={items.some((item) => item.id === product.id)}
+                  >
                     <FaCartShopping />
                     <p>Add to cart</p>
                   </button>

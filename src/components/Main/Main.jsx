@@ -104,7 +104,7 @@ function Main({
             setSelectedColor={setSelectedColor}
           />
           <div className={style.all}>
-            {loading && <p>Loading...</p>}
+            {loading && <p className={style.abc}>Loading...</p>}
             <ul className={style.products_wrapper}>
               {sortedProducts.map((product) => (
                 <li key={product.id}>

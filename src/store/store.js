@@ -1,4 +1,4 @@
-import { configureStore, createSlice } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import productsSlice from "./productsSlice";
 import colorSlice from "./colorSlice";
 import brandSlice from "./brandSlice";
